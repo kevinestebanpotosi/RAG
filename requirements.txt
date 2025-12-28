@@ -1,0 +1,14 @@
+# --- Cloud SDKs ---
+azure-search-documents>=11.4.0
+azure-core
+groq>=0.5.0
+
+# --- AI & Processing ---
+sentence-transformers>=2.2.0
+pypdf>=4.0.0
+torch>=2.0.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0
+numpy
+tqdm
