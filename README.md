@@ -63,7 +63,7 @@ Un sistema de **Generación Aumentada por Recuperación (RAG)** de nivel empresa
 
 ```bash
 # Clonar repositorio
-git clone <your-repo-url>
+git clone https://github.com/kevinestebanpotosi/RAG.git
 cd RAG
 ```
 
