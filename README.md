@@ -20,33 +20,33 @@ Un sistema de **Generación Aumentada por Recuperación (RAG)** de nivel empresa
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Ingestion Pipeline                        │
+│                    Ingestion Pipeline                       │
 ├─────────────────────────────────────────────────────────────┤
-│                                                               │
-│  PDF Files  →  PyPDF2  →  Text Chunking  →  Sentence-  →   │
-│               Parser       (500 chars,         Trans-        │
-│                           50 overlap)         formers        │
-│                                               (Local)        │
-│                                                 ↓             │
-│                                            384D Vectors      │
-│                                                 ↓             │
-│                                         Azure AI Search      │
-│                                         (Indexing HNSW)      │
-│                                                               │
+│                                                             │
+│  PDF Files  →  PyPDF2  →  Text Chunking  →  Sentence-  →    │
+│               Parser       (500 chars,         Trans-       │
+│                           50 overlap)         formers       │
+│                                               (Local)       │
+│                                                 ↓           │
+│                                            384D Vectors     │
+│                                                 ↓           │
+│                                         Azure AI Search     │
+│                                         (Indexing HNSW)     │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
-│                      Chat Pipeline                           │
+│                      Chat Pipeline                          │
 ├─────────────────────────────────────────────────────────────┤
-│                                                               │
+│                                                             │
 │  User Query  →  Local Embedding  →  Vector Search  →  Top-K │
-│                                      (Azure Search)   Docs   │
-│                                                        ↓      │
-│                                       Context Building ↓     │
-│                                       (Format Prompt) ↓      │
-│                                                        ↓      │
-│   ← Response ← Groq API (Llama-3.3-70B) ← LLM Call         │
-│                                                               │
+│                                      (Azure Search)   Docs  │
+│                                                        ↓    │
+│                                       Context Building ↓    │
+│                                       (Format Prompt) ↓     │
+│                                                        ↓    │
+│   ← Response ← Groq API (Llama-3.3-70B) ← LLM Call          │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
