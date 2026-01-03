@@ -162,8 +162,6 @@ RAG/
 │
 ├── notebooks/            # Jupyter notebooks para experimentación
 │   └── (análisis y pruebas)
-│
-└── venv/                 # Entorno virtual (no se sube a git)
 ```
 
 ---
