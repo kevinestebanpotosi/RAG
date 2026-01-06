@@ -24,7 +24,7 @@ env/
 *~
 .DS_Store
 
-# Variables de entorno (CRÍTICO - Nunca subir credenciales)
+# Variables de entorno 
 .env
 .env.local
 
